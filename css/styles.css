@@ -1,38 +1,456 @@
-/* CSS GOES HERE */
+
+
+/* Fonts Linked */
+
+@font-face {
+    font-family: 'Aboreto';
+    src: url('../fonts/aboreto.ttf') format('truetype');
+           }
+
+@font-face {
+    font-family: 'Homemade Apple';
+    src: url('../fonts/homemade-apple.ttf') format('truetype');
+           }
+
+@font-face {
+    font-family: Kodchasan;
+    src: url('../fonts/kodchasan.ttf') format('truetype');
+}           
+
+
+
+
+
+/* Text Fonts and Styles */
+
+h1 {
+    font-family: 'Homemade Apple', serif;
+   }
+
+.click {
+    font-family: 'Homemade Apple', serif;
+    line-height: .9;
+    align-self: top;
+       }
+
+.about {
+    font-family: 'Kodchasan', serif;
+       }
+
+nav {
+    font-family: 'Kodchasan', serif;
+    }
+
+nav a {
+     text-decoration: none; color: #6A6A6A;
+      }
+
+.subtitle {
+    font-family: 'Homemade Apple', serif;
+    font-size: smaller;
+          }
+
+h2 {
+    font-family: 'Aboreto', serif; 
+   }
+
+.description {
+    font-family: 'Kodchasan', serif;
+             }
+
+.bio {
+    font-family: 'Kodchasan', serif;
+     }
+
+.home-button {
+    font-family: 'Kodchasan', serif;
+             }
+ 
+a.home-button {
+    text-decoration: none; color: #6A6A6A;
+              }
+
+.question {
+    font-family: 'Aboreto', serif;
+       }
+
+.answer-paragraph {
+    font-family: 'Kodchasan', serif;
+       }
+
+.footer-text {
+    font-family: 'Kodchasan', serif;
+       }
+
+.button {
+        font-family: 'Kodchasan', serif;
+        }
+
+a.button {
+        text-decoration: none; color: #0B0B0B
+         }
+
+
+
+
+
+
+/* Colors */
+
+nav {
+    background-color: #FDF8F8;
+    }
+
+.header {
+    background-color: #FFE9EA;
+        }
+
+section:nth-child(even) {
+    background-color: #FFE9EA;
+                        }
+
+section:nth-child(odd) {
+    background-color: #FDF8F8;
+                       }
+
+section.about-header {
+    background-color: #FFE9EA;
+        }
+
+section#faqs {
+    background-color: #EACBCC;
+        }
+
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FDF8F8;
+     }
+
+
+
+
+
+ /* Nav Bar */
+
+
+.nav-container {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: none !important;
+               }
+
+
+.nav-links {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;   
+    justify-content: space-between;
+    margin: 10px;
+           }
+
+
+nav a {
+    margin: 0 30px;
+    padding: 10px 0;
+    position: relative;
+      }   
+
+
+.navlogo {
+    width: 15%;
+         }
+
+
+.toggle {
+    width: 5%;
+        }
+
+.secondary {
+    display: flex;
 }
+
+
+
+
+
+
+
+
+
+/* Main Header */
+
+.cloud {
+    margin: auto;
+    display: block;
+}
+
+
+.tap-here {
+    color: #6A6A6A;
+}
+
+
+.about {
+    padding-left: 20px;
+}
+
+
+.welcome {
+    font-size: 80px;
+    color: #6A6A6A;
+    text-align: center;
+    font-weight: normal;
+}
+
+.click-arrow {
+    display: flex;
+    flex-direction: row;
+}
+
+
+span.click {
+    align-self: center;
+    font-size: 40px;
+}
+
+
+.arrow {
+    width: 64px;
+    margin-left: 20px;
+    align-self: center;
+}
+
+
+.star-1 {
+    width: 92px;
+    position: absolute;
+    top: 242px;
+    left: 140px;
+}
+
+
+.star-2 {
+    transform: scale(1.25);
+    position: absolute;
+    top: 618px;
+    left: 269px;
+}
+
+
+.star-3 {
+    width: 92px;
+    position: absolute;
+    top: 699px;
+    right: 140px;
+}
+
+
+.star-4 {
+    transform: scale(1.2);
+    width: 92px;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+}
+
+
+.star-5 {
+    transform: scale(0.5);
+    position: absolute;
+    top: 375px;
+    right: 100px;
+}
+
+
+
+
+
+
+
+/* Section Gallery */
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 45px;
+}   
+
+        
+.subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.gallery-image {
+    width: 30%;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+        }   
+
+
+.description {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+
+
+
+
+/* Responsive Frog Design */
+
+.responsive {
+    width: 65%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Organization and Spacing */
+
 body {
     margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+	vertical-align: baseline; }
+
+
+
+
 section {
     padding: 60px 20px;
-}
-section:nth-child(even) {
-    background-color: #f2f2f2;
-}
+        }
+
+
+
+
 .container {
-    width: 100%;
-   /* max-width: 960px; */
-    text-align: left;
+    width: auto;
+    max-width: 900px;
     margin: 0 auto;
 }
-h1 {
-    font-size: 3em;
-}
-section .gallery {
-    width: 100%;
-}
-section .gallery img {
-    width: 32%;
-}
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
 footer {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
+    background-color: #FDF8F8;
+    color: #0B0B0B;
+    padding: 20px
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: none !important;
+    
+}
+
+.icons {
+    width: 10%;
+}
+
+.icon {
+    width: 25px;
+}
+
+
+
+
+/* Buttons */
+.button {
+    border-radius: 10px;
+    border: 1px solid #0B0B0B;
+    padding: 5px 15px;
+}
+
+
+
+
+
+
+
+
+/* About Page */
+
+
+.home-button {
+   position: absolute;
+   bottom: 20px;
+   right: 20px;
+}
+
+.intro {
+    color: #6A6A6A;
+    margin: 0 !important;
+}
+
+.intro-container {
+    width: 80%;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 43px;
+}
+
+.bio {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.about-header {
+    position: relative;
+}
+
+.headshot {
+   width: 95%;
+}
+
+.faq-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+
+.question {
+    font-size: 25px;
+}
+
+
+.answer-paragraph {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
 }
