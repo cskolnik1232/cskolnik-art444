@@ -1,7 +1,11 @@
 /* TABLET VIEW */
-@media only screen and (max-width:992px) {
+@media only screen and (max-width:1080px) {
 
 
+
+
+
+/* TABLET HOME PAGE */
 
 /* Tablet Nav Bar */
 
@@ -65,14 +69,14 @@
     }
 
  .cloud {
-    width: 90%;
+    width: 80%;
     margin-top: 20px;
 
       }
 
 
  .welcome {
-        font-size: 50px
+        font-size: 65px
     }
 
 
@@ -80,12 +84,64 @@
 
 /* Tablet Gallery*/
 
+.title {
+   font-size: 35px; 
+       }
+
+.description {
+   font-size: 15px;
+}
+
+
+
+/* Tablet Footer */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+             }
 
 
 
 
+/* TABLET ABOUT PAGE */
+
+.intro {
+   font-size: 25px;
+}
 
 
+.bio {
+      font-size: 14px;
+}
+
+
+.home-button {
+    position: absolute;
+    bottom: 20px;
+    right: 45px;
+}
+
+
+.faq-title {
+   font-size: 35px;
+}
+
+
+.question {
+   font-size: 20px;
+}
+
+
+.answer-paragraph {
+   font-size: 13px;
+}
+
+section#faqs {
+   padding-top: 35px;
+}
 
 /* Tablet End */}
 
@@ -101,8 +157,12 @@
 
 
 /* MOBILE VIEW */
-@media only screen and (max-width: 478px) {
-  
+@media only screen and (max-width: 630px) {
+
+
+
+
+/* HOME PAGE */
 
 
 /* Mobile Nav Bar */
@@ -113,7 +173,7 @@
 
 
  .navlogo {
-    width: 60%;
+    width: 40%;
     align-self: center;
          }
 
@@ -171,12 +231,13 @@
       }
 
 
-
  .welcome {
-        font-size: 30px
+    font-size: 40px
     }
 
-
+section#faqs {
+   padding-top: 12px;
+}
 
 
 
@@ -184,6 +245,17 @@
 
 
 /* Mobile Gallery*/
+
+
+ .title {
+    font-size: 32px;
+        }
+
+
+ .subtitle {
+    font-size: 17px;
+             }
+
 
  .gallery-image {
     display: flex;
@@ -198,9 +270,70 @@
     flex-direction: column;
     gap: 0px;
     margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 15px;
              }
 
 
+
+
+
+
+/* Mobile Footer */
+
+
+
+
+
+
+
+/* MOBILE ABOUT PAGE */
+
+
+ .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+         }
+
+
+ .intro {
+    font-size: 20px;
+        }
+
+
+ .bio {
+    font-size: 14px;
+     }
+
+
+ aside {
+    scale: 80%;
+       }
+
+
+ .home-button {
+    position: absolute;
+    bottom: 44px;
+    right: 161px;
+        }
+
+
+ .faq-title {
+    font-size: 30px;
+          }
+
+
+ .question {
+    font-size: 19px;
+     }
+
+
+  .answer-paragraph {
+    font-size: 14px;
+     }
 
 
 

@@ -16,31 +16,11 @@
    overflow: scroll;
    border-radius: 15px;
    box-shadow: 0px 10px 5px rgba(56, 27, 103, 0.5);
-
-
-
-
-
    }
-   
-
-
-
-body {  background-image: url(images/frogresponsive.png);
-background-size: cover;
-background-repeat: no-repeat;
-
-
-
-  }
-
-
-
-
+ 
   div.wrapped-around {
    font-family: Georgia, 'Times New Roman', Times, serif;
   }
-
 
    h1, h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -50,6 +30,19 @@ background-repeat: no-repeat;
   </style>
   </h1>
   
+
+
+<style>
+.fancy {
+    color: hotpink;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px lightblue;
+}
+
+
+</style>
+
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -69,6 +62,53 @@ background-repeat: no-repeat;
    <a href="index.html"> <strong>Click here to go home</strong></a>
 
   </div>
+
+
+
+
+
+
+
+<h1>Practice with JavaScript</h1>
+
+<button onclick="addClassName()">Click me to add a class name to the headline</button>
+
+
+
+<script>
+
+const headline = document.querySelector("h1").classList;
+
+
+function addClassName() {
+    headline.add("fancy");
+    console.log('class name has been added');
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 
