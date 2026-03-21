@@ -7,61 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Hello World!</title>
   <style> 
-   div#wrapper {
-   height: 100px; width: auto;
-   background-color: lightblue;
-   margin: 50px;
-   border: 10px dashed plum;
-   padding: 50px;
-   overflow: scroll;
-   border-radius: 15px;
-   box-shadow: 0px 10px 5px rgba(56, 27, 103, 0.5);
-   }
- 
-  div.wrapped-around {
-   font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-
-   h1, h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: normal;
-   }
-
-  </style>
-  </h1>
-  
-
-
-<style>
-.fancy {
-    color: hotpink;
-    font-size: 3em;
-    text-shadow: 2px 2px 5px lightblue;
+   
+.title {
+  display: none;
 }
 
 
+
+
 </style>
-
-
-  <link rel="stylesheet" href="css/styles.css">
 </head>
-
-
-
-
 <body>
-  <div id="wrapper" class="wrapped-around">
 
 
-    <h1>Hello World</h1>
-  
-   <h2>My name is Claire Skolnik</h2>
+<p class="title">Hello World!</p>
 
-   <p>hi hello whats up Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-   
-   <a href="index.html"> <strong>Click here to go home</strong></a>
-
-  </div>
+<button class="button"> click here </button>
 
 
 
@@ -69,23 +30,29 @@
 
 
 
-<h1>Practice with JavaScript</h1>
 
-<button onclick="addClassName()">Click me to add a class name to the headline</button>
 
 
 
 <script>
 
-const headline = document.querySelector("h1").classList;
+const mainTitle = document.querySelector('.title').classList;
+
+const button = document.querySelector('.button');
 
 
-function addClassName() {
-    headline.add("fancy");
-    console.log('class name has been added');
+
+
+
+function reveal() {
+  mainTitle.toggle('title');
 }
 
+button.addEventListener('click', reveal);
 
+
+
+document.querySelector('.button').addEventListener('click', reveal);
 
 
 
@@ -97,20 +64,5 @@ function addClassName() {
 </script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
-
-
-</html>

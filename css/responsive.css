@@ -36,6 +36,33 @@
 
 
 
+/* Nav Bar Dropdown*/
+
+ .dropdown-display {
+    display: block;
+ }
+
+  .dropdown-style {
+   display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #FDF8F8;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+ }
+
+ .dropdown-style a {
+   font-family: 'Kodchasan', serif;
+   text-decoration: none;
+   color: #6A6A6A;}
+
+.show {
+    display: block;
+}
+
+
 
 /* Tablet Main Header */
 
@@ -316,8 +343,8 @@ section#faqs {
 
  .home-button {
     position: absolute;
-    bottom: 44px;
-    right: 161px;
+    right: 50%;
+    margin-right: -60px;
         }
 
 
@@ -335,7 +362,9 @@ section#faqs {
     font-size: 14px;
      }
 
-
+section.about-header {
+    padding: 28px 32px;
+}
 
 
 

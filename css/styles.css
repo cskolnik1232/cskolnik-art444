@@ -118,17 +118,17 @@
 
 
  .header {
-    background-color: #FFE9EA;
+    background-color: #61181a;
         }
 
 
  section:nth-child(even) {
-    background-color: #FFE9EA;
+    background-color: #FDF8F8;
                         }
 
 
  section:nth-child(odd) {
-    background-color: #FDF8F8;
+    background-color: #FFE9EA;
                        }
 
 
@@ -200,9 +200,14 @@
 
 
 
+/* Nav Bar Dropdown*/
 
 
 
+.dropdown {
+    display: none;
+   }
+   
 
 /* Main Header */
 
