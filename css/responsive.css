@@ -37,17 +37,13 @@
 
 
 /* Nav Bar Dropdown*/
-
- .dropdown-display {
-    display: block;
- }
+ 
 
   .dropdown-style {
    display: flex;
     flex-direction: column;
     gap: 30px;
     background-color: #FDF8F8;
-    position: absolute;
     align-items: center;
     width: 100%;
     padding: 20px;
@@ -58,7 +54,10 @@
    text-decoration: none;
    color: #6A6A6A;}
 
-.show {
+
+
+
+.dropdown.show {
     display: block;
 }
 

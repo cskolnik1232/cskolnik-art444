@@ -190,7 +190,6 @@
  .secondary {
     display: flex;
     justify-content: flex-end;
-    max-height: 70px;
        }
 
 
@@ -202,11 +201,27 @@
 
 /* Nav Bar Dropdown*/
 
-
+nav {
+    position: relative;
+     z-index: 1000;
+    overflow: visible; 
+}
 
 .dropdown {
+    position: absolute;
+    top: 80px; 
+    left: 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     display: none;
-   }
+    z-index: 9999;
+    
+}
+   
+
+.dropdown.show {
+    display: block !important;
+    }
    
 
 /* Main Header */
@@ -384,7 +399,6 @@
 
  .container {
     width: auto;
-    max-width: 900px;
     margin: 0 auto;
           }
 
