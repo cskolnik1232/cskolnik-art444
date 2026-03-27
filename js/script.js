@@ -1,5 +1,6 @@
 // ALL YOU JS GOES HERE
 
+//dropdown menu
 document.addEventListener('DOMContentLoaded', () => {
     console.log('JS LOADED');
 
@@ -10,26 +11,36 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('dropdown:', dropdown);
 
     if (!hamburger) {
-        console.error('❌ .menu NOT FOUND');
+        console.error('.menu NOT FOUND');
     }
 
     if (!dropdown) {
-        console.error('❌ .dropdown NOT FOUND');
+        console.error('.dropdown NOT FOUND');
     }
 
     hamburger.addEventListener('click', () => {
-        console.log('✅ CLICK FIRED');
+        console.log('CLICK FIRED');
         dropdown.classList.toggle('show');
-        console.log('classes now:', dropdown.className);
+        
     });
 });
 
 
 
 
+//dropdown loop
 
+const element = document.querySelector('.dropdown-style')
+const navLinks = element.querySelectorAll('a.links')
 
+for (let i = 0; i < navLinks.length; i++ ) {
+navLinks[i].addEventListener('click', closemenu)
+}
 
+function closemenu() {
+    const dropdown = document.querySelector('.dropdown');
+     dropdown.classList.remove('show');
+}
 
 
 

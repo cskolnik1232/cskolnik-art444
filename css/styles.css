@@ -209,18 +209,17 @@ nav {
 
 .dropdown {
     position: absolute;
-    top: 80px; 
-    left: 0;
+    top: -1000px; 
     width: 100vw;
     margin-left: calc(-50vw + 50%);
-    display: none;
     z-index: 9999;
-    
+    transition: all 1s;
 }
    
 
 .dropdown.show {
-    display: block !important;
+    top: 80px;
+
     }
    
 
@@ -399,10 +398,13 @@ nav {
 
  .container {
     width: auto;
+    max-width: 900px;
     margin: 0 auto;
           }
 
-
+.headercontainer {
+   max-width: 1000px;
+}
 
 
 
