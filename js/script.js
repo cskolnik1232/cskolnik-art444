@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('hamburger:', hamburger);
     console.log('dropdown:', dropdown);
 
+    
     if (!hamburger) {
         console.error('.menu NOT FOUND');
     }
