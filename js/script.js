@@ -46,10 +46,28 @@ function closemenu() {
 
 
 
+// light/dark mode
+
+function toggleTheme() {
+  const theme = document.getElementById("lightMode");
+
+  const current = theme.getAttribute("href");
+
+  if (current === "css/styles.css") {
+    theme.setAttribute("href", "css/darkmode.css");
+  } else {
+    theme.setAttribute("href", "css/styles.css");
+  }
+}
 
 
 
+// Automatically switch to dark mode after 6 PM and before 6 AM
 
+const today = new Date();
 
-
-
+if (today.getHours() >= 18 || today.getHours() < 6) {
+  document.getElementById("lightMode").setAttribute("href", "css/darkmode.css");
+} else {
+  document.getElementById("lightMode").setAttribute("href", "css/styles.css");
+}

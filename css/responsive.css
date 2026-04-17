@@ -36,42 +36,6 @@
 
 
 
-/* Nav Bar Dropdown*/
- 
-
-  .dropdown-style {
-   display: flex;
-    flex-direction: column;
-    gap: 30px;
-    background-color: rgba(253,248,248,.85);
-    align-items: center;
-    width: 100;
-    padding: 20px;
- }
-
- .dropdown-style a {
-   font-family: 'Kodchasan', serif;
-   text-decoration: none;
-   color: #6A6A6A;
-    display: block;
-    width: 100%;
-    padding: 15px 0;
-    text-align: center;}
-
- nav a {
-   width: 50% !important;
- }   
-
-.dropdown-style a:hover {
-    background-color: #EACBCC;;
-}
-
-.dropdown.show {
-    display: block;
-}
-
-
-
 /* Tablet Main Header */
 
  .click-arrow {
@@ -225,7 +189,10 @@ section#faqs {
       }
 
 
-
+.dropdown.show {
+   margin-top:0;
+   width: 100vw;
+}
 
 
 

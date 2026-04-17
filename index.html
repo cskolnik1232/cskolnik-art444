@@ -6,7 +6,7 @@
   <meta name="claire skolnik" content="Art 444 Student Work">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Claire's Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css" id="lightMode">
 <link rel="stylesheet" href="css/responsive.css">
 </head>
 
@@ -25,9 +25,9 @@
 <!-- NAV BAR--> 
 <nav>
 
-  <div class="container nav-container">
+  <div class="nav-container">
 
-   <img class="navlogo" src="images/dark-logo.svg" alt="Light Logo" loading="lazy"/>
+   <img class="navlogo" id="navlogo" src="images/light-logo.svg" alt="Light Logo" loading="lazy"/>
    
 
     <div class="secondary">
@@ -41,8 +41,11 @@
          <div><a href="#section-6">UIOTW</a></div>
       </div>
 
-      <img class="toggle" src="images/lighttoggle.svg" alt="Dark Mode Toggle" loading="lazy"/>
+      <img class="toggle light" id="togglebutton" onclick="toggleTheme()" style="cursor:pointer" src="images/lighttoggle.svg" alt="Dark Mode Toggle" loading="lazy"/>
   
+      <img class="toggle dark" id="togglebutton" onclick="toggleTheme()" style="cursor:pointer" src="images/darktoggle.svg" alt="Light Mode Toggle" loading="lazy"/>
+  
+
       <img class="menu" src="images/lightmenu.svg" alt="Menu Icon" loading="lazy"/>
 
     </div>
@@ -83,7 +86,9 @@
         <span class="click">click here</span>
         <span class="about">to learn more about me</span>
       </div>
-     <!--<img class="arrow" src="images/grey-arrow.svg" alt="Arrow pointing down" loading="lazy">--> 
+     <img class="arrow darkarrow" src="images/greyarrow.png" alt="Arrow pointing down" loading="lazy">
+
+     <img class="arrow lightarrow" src="images/whitearrow.png" alt="Arrow pointing down" loading="lazy">
     
     </div>
   </div>
@@ -372,12 +377,22 @@
 
       <p class="footer-text">Claire Skolnik Copywrite © 2026, All Rights Reserved</p>
 
-      <div class="icons"> 
-       <img class="icon" src="images/phone.svg" alt="phone icon" loading="lazy"/>
-       <img class="icon" src="images/mail.svg" alt="email icon" loading="lazy"/>
-       <img class="icon" src="images/linkedin.svg" alt="linkedin icon" loading="lazy"/>
-       <img class="icon" src="images/instagram.svg" alt="instagram icon" loading="lazy"/>
+      <div class="icons lm"> 
+       <a href="tel:6195070137"><img class="icon phone" src="images/lmphone.svg" alt="phone icon" loading="lazy"/></a>
+       <a href="mailto:claireskolnik@gmail.com"><img class="icon mail" src="images/lmmail.svg" alt="email icon" loading="lazy"/></a>
+       <a href="https://www.linkedin.com/in/claire-skolnik14/" target="_blank"><img class="icon linkedin" src="images/lmlinkedin.svg" alt="linkedin icon" loading="lazy"/></a>
+       <a href="https://www.instagram.com/hana.mochi.ice/" target="_blank"><img class="icon instagram" src="images/lminstagram.svg" alt="instagram icon" loading="lazy"/></a>
       </div>
+
+     <div class="icons dm"> 
+       <a href="tel:6195070137"><img class="icon phone" src="images/dmphone.svg" alt="phone icon" loading="lazy"/></a>
+       <a href="mailto:claireskolnik@gmail.com"><img class="icon mail" src="images/dmmail.svg" alt="email icon" loading="lazy"/></a>
+       <a href="https://www.linkedin.com/in/claire-skolnik14/" target="_blank"><img class="icon linkedin" src="images/dmlinkedin.svg" alt="linkedin icon" loading="lazy"/></a>
+       <a href="https://www.instagram.com/hana.mochi.ice/" target="_blank"><img class="icon instagram" src="images/dminstagram.svg" alt="instagram icon" loading="lazy"/></a>
+      </div>
+
+
+
 
   </div>
 </footer>
