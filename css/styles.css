@@ -169,7 +169,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    z-index: 1111;
+    z-index: 800;
     max-width: none !important;
     position: fixed;
     width: 100%;
@@ -343,27 +343,28 @@ nav {
         }   
 
 
+ 
  .star-1 {
     width: 92px;
     position: absolute;
-    top: 242px;
-    left: 140px;
+    top: 30%;
+    left: 8%;
         }
 
 
  .star-2 {
     transform: scale(1.25);
     position: absolute;
-    top: 618px;
-    left: 269px;
+    top: 75%;
+    left: 15%;
           }
 
 
  .star-3 {
     width: 92px;
     position: absolute;
-    top: 699px;
-    right: 140px;
+    top: 90%;
+    left: 80%;
            }
 
 
@@ -371,20 +372,75 @@ nav {
     transform: scale(1.2);
     width: 92px;
     position: absolute;
-    top: 200px;
-    right: 200px;
+    top: 20%;
+    right: 20%;
             }
 
 
  .star-5 {
     transform: scale(0.5);
     position: absolute;
-    top: 375px;
-    right: 100px;
+    top: 50%;
+    right: 5%;
              }
 
 
 
+/* Main Header Animation */
+
+.star-1 {
+  width: 100px;
+  animation: twinkle1 1.6s ease-in-out infinite;
+}
+
+@keyframes twinkle1 {
+  0%   { transform: scale(.9); opacity: 0.5; }
+  50%  { transform: scale(1.1); opacity: 1;}
+  100% { transform: scale(.9); opacity: 0.5;} }
+
+
+.star-2 {
+  width: 100px;
+  animation: twinkle2 1.9s ease-in-out infinite;
+}
+
+@keyframes twinkle2 {
+  0%   { transform: scale(.75); opacity: 1;}
+  50%  { transform: scale(1); opacity: 0.5;}
+  100% { transform: scale(.75); opacity: 1;} }
+
+
+.star-3 {
+  width: 100px;
+  animation: twinkle3 1.7s ease-in-out infinite;
+}
+
+@keyframes twinkle3 {
+  0%   { transform: scale(.6); opacity: 1; }
+  50%  { transform: scale(.8); opacity: 0.5; }
+  100% { transform: scale(.6); opacity: 1; } }
+
+
+.star-4 {
+  width: 100px;
+  animation: twinkle4 2s ease-in-out infinite;
+}
+
+
+@keyframes twinkle4 {
+  0%   { transform: scale(.5); opacity: 0.5; }
+  50%  { transform: scale(.7); opacity: 1; }
+  100% { transform: scale(.5); opacity: 0.5; } }
+
+.star-5 {
+  width: 100px;
+  animation: twinkle5 2.2s ease-in-out infinite;
+}
+
+@keyframes twinkle5 {
+  0%   { transform: scale(1.1); opacity: 1;}
+  50%  { transform: scale(.9); opacity: 0.5;}
+  100% { transform: scale(1.1); opacity: 1; } }
 
 
 
@@ -405,9 +461,29 @@ nav {
         }
 
 
+ .reffy {
+    display: block;
+    width: 30%;
+              }
+
+ .frogreffy {
+    width: 45%;
+              }             
+
+ .image {
+    width: 100%;
+               }            
+
  .gallery-image {
     width: 30%;
               }
+
+ .gallery-image2 {
+    display: block;
+    width: 30%;
+    
+              }              
+
 
 
  .gallery {
@@ -424,6 +500,45 @@ nav {
     gap: 50px;
     margin-top: 30px;
          }
+
+
+
+ .lightbox {
+  /* Default to hidden */
+  display: none;
+
+  /* Overlay entire screen */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  /* A bit of padding around image */
+  padding: 1em;
+
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 
 
 
@@ -470,6 +585,7 @@ nav {
 
 .headercontainer {
    max-width: 1000px;
+   position: relative;
 }
 
 

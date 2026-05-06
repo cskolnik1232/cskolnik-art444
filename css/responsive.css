@@ -80,6 +80,50 @@
 
 
 
+/* Tablet Stars */
+
+ .star-1 {
+    transform: scale(.7);
+    position: absolute;
+    top: 25%;
+    left: 5%;
+        }
+
+
+ .star-2 {
+    transform: scale(.7);
+    position: absolute;
+    top: 90%;
+    left: 10%;
+          }
+
+
+ .star-3 {
+    transform: scale(.7);
+    position: absolute;
+    top: 98%;
+    left: 80%;
+           }
+
+
+ .star-4 {
+    transform: scale(.7);
+    width: 92px;
+    position: absolute;
+    top: 15%;
+    right: 20%;
+            }
+
+
+ .star-5 {
+    transform: scale(.7);
+    position: absolute;
+    top: 50%;
+    right: 1%;
+             }
+
+
+
 
 /* Tablet Gallery*/
 
@@ -200,7 +244,10 @@ section#faqs {
 }
 
 
-
+.reffy {
+    width: 100%;
+   
+}
 
 
 /* Mobile Main Header */
@@ -240,6 +287,7 @@ section#faqs {
 
  .welcome {
     font-size: 40px
+
     }
 
 section#faqs {
@@ -248,6 +296,33 @@ section#faqs {
 
 
 
+
+
+/* Tablet Stars */
+
+ .star-1 {
+    display: none;
+        }
+
+
+ .star-2 {
+    display: none;
+          }
+
+
+ .star-3 {
+    display: none;
+           }
+
+
+ .star-4 {
+    display: none;
+            }
+
+
+ .star-5 {
+    display: none;
+             }
 
 
 
